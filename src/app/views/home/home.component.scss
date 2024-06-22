@@ -1,0 +1,115 @@
+@import "../../../styles/variables.scss";
+/* Fondo gris claro para la tarjeta */
+.fondo {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 20px;
+}
+
+/* Estilos personalizados para los filtros */
+.card {
+  margin-bottom: 20px;
+}
+
+#nameFilter,
+#starsFilter,
+#ratingRange,
+#priceRange {
+  margin-bottom: 1rem;
+}
+
+.card {
+  border: 1px solid #dee2e6;
+  margin-bottom: 15px;
+
+  .card-img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+/* Estilos para la paginación */
+.pagination {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  color: #007bff;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  background-color: #ffffff;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+/* Alineación de estrellas */
+#starsFilter .form-check-label {
+  display: flex;
+  align-items: center;
+}
+
+#starsFilter .form-check-label i {
+  margin-left: 5px;
+}
+
+/* Estilos para la caja de filtros */
+.filtro-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+.filtro-container .row {
+  margin-bottom: 1rem;
+}
+
+.filtro-container label {
+  font-weight: bold;
+}
+
+.filtro-container .form-text {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.d-flex .form-check-inline {
+  margin-right: 10px;
+}
